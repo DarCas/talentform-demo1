@@ -118,6 +118,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         default:
             header('Location: /backend/');
     }
+
+// La sintassi SWITCH equivale a quanto segue:
+//
+//    if ($_POST['action'] === 'update') {
+//
+//    } else if ($_POST['action'] === 'delete') {
+//
+//    } else if ($_POST['action'] === 'login') {
+//
+//    } else {
+//
+//    }
 } else if ($_SERVER['REQUEST_METHOD'] === 'GET' && $_GET['action'] === 'logout') {
     setcookie('logged', '', -1);
     header('Location: /backend/');
