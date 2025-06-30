@@ -45,7 +45,7 @@ if (!empty($_GET['successo']) &&
 <html lang="it">
 <head>
     <title>Guestbook</title>
-    <?php include './assets/includes/std-meta.inc.php'; ?>del
+    <?php include './assets/includes/std-meta.inc.php'; ?>
 </head>
 
 <body>
